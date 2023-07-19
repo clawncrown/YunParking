@@ -18,7 +18,7 @@
         <module>smart-app</module>
         <module>smart-charge-server</module>
 		<module>smart-mqtt-common</module>
-        <module>YunParking</module>
+<!--        <module>YunParking</module>-->
         <module>smart-pay</module>
         <module>smart-dev-manage</module>
     </modules>

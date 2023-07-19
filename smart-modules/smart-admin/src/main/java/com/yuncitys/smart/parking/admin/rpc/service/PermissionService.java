@@ -1,6 +1,6 @@
 package com.yuncitys.smart.parking.admin.rpc.service;
 
-import com.smart.cache.annotation.Cache;
+import com.yuncitys.smart.merge.annonation.Cache;
 import com.yuncitys.ag.core.context.BaseContextHandler;
 import com.yuncitys.smart.parking.admin.biz.ElementBiz;
 import com.yuncitys.smart.parking.admin.biz.MenuBiz;

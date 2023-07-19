@@ -1,15 +1,15 @@
-package com.yuncitys.smart.parking.app.oauth.config;
+package com.yuncitys.smart.parking.auth.module.oauth.config;
 
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
 /**
  * Created by smart on 2017/8/11.
  */
 @Configuration
-public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+public class WebparkingConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     public void configure(HttpSecurity http) throws Exception {
@@ -19,16 +19,13 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 .anyRequest().authenticated()
                 .and()
-                .authorizeRequests().antMatchers("/appUser/register","/appUser/getSmsCode","/admin/**")
+                .authorizeRequests().antMatchers("/static/**", "/favicon.ico", "/webjars/**","/client/**","/v2/api-docs","/v2/api-docs","/generator/build")
                 .permitAll()
-                .and().csrf().disable()
+                .and()
+                .authorizeRequests().antMatchers(HttpMethod.OPTIONS)
+                .permitAll()
+                .and()
                 .formLogin().loginPage("/login").permitAll();
-    }
-
-    @Override
-    public void configure(WebSecurity web) throws Exception {
-        //解决静态资源被拦截的问题
-        web.ignoring().antMatchers("/admin/**");
     }
 
 }

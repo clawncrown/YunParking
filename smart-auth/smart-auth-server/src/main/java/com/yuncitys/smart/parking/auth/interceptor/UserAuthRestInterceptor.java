@@ -2,7 +2,7 @@ package com.yuncitys.smart.parking.auth.interceptor;
 
 import com.alibaba.fastjson.JSON;
 import com.yuncitys.ag.core.constants.CommonConstants;
-import com.yuncitys.ag.core.util.jwt.IJWTInfo;
+import com.yuncitys.smart.parking.auth.common.util.jwt.IJWTInfo;
 import com.yuncitys.smart.parking.auth.configuration.UserConfiguration;
 import com.yuncitys.smart.parking.auth.jwt.user.JwtTokenUtil;
 import com.yuncitys.ag.core.context.BaseContextHandler;

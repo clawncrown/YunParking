@@ -1,7 +1,7 @@
 package com.yuncitys.smart.parking.admin.biz;
 
-import com.smart.cache.annotation.Cache;
-import com.smart.cache.annotation.CacheClear;
+import com.yuncitys.smart.merge.annonation.Cache;
+import com.yuncitys.smart.merge.annonation.CacheClear;
 import com.yuncitys.smart.merge.annonation.MergeResult;
 import com.yuncitys.smart.parking.admin.constant.AdminCommonConstant;
 import com.yuncitys.smart.parking.admin.entity.Element;

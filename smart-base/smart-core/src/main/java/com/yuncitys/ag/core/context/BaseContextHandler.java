@@ -2,7 +2,7 @@ package com.yuncitys.ag.core.context;
 
 
 import com.yuncitys.ag.core.constants.CommonConstants;
-import com.yuncitys.ag.core.util.StringHelper;
+//import com.yuncitys.ag.core.util.StringHelper;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -65,12 +65,16 @@ public class BaseContextHandler {
 
     public static String getName() {
         Object value = get(CommonConstants.CONTEXT_KEY_USER_NAME);
-        return StringHelper.getObjectValue(value);
+        return getObjectValue(value);
     }
 
     public static String getToken() {
         Object value = get(CommonConstants.CONTEXT_KEY_USER_TOKEN);
-        return StringHelper.getObjectValue(value);
+        return getObjectValue(value);
+    }
+
+    private static String getObjectValue(Object obj){
+        return obj==null?"":obj.toString();
     }
 
     public static void setToken(String token) {

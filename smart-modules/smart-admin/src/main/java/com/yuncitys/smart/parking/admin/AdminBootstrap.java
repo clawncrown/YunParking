@@ -1,6 +1,6 @@
 package com.yuncitys.smart.parking.admin;
 
-import com.smart.cache.EnableAceCache;
+import com.yuncitys.smart.merge.EnableAceCache;
 import com.yuncitys.smart.merge.EnableAceMerge;
 import com.yuncitys.smart.parking.auth.client.EnableAceAuthClient;
 import com.spring4all.swagger.EnableSwagger2Doc;

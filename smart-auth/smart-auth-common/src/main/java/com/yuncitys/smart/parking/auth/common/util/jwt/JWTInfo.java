@@ -2,6 +2,7 @@ package com.yuncitys.smart.parking.auth.common.util.jwt;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.Map;
 
 /**
  * Created by ace on 2017/9/10.
@@ -48,6 +49,11 @@ public class JWTInfo implements Serializable,IJWTInfo {
     @Override
     public Date getExpireTime() {
         return expireTime;
+    }
+
+    @Override
+    public Map<String, String> getOtherInfo() {
+        return null;
     }
 
     public void setExpireTime(Date expireTime) {

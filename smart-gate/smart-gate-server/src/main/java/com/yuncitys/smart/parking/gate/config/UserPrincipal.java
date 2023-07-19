@@ -3,7 +3,7 @@ package com.yuncitys.smart.parking.gate.config;
 import com.yuncitys.smart.gate.ratelimit.config.IUserPrincipal;
 import com.yuncitys.smart.parking.auth.client.config.UserAuthConfig;
 import com.yuncitys.smart.parking.auth.client.jwt.UserAuthUtil;
-import com.yuncitys.ag.core.util.jwt.IJWTInfo;
+import com.yuncitys.smart.parking.auth.common.util.jwt.IJWTInfo;
 import com.yuncitys.smart.parking.common.constant.RequestHeaderConstants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;

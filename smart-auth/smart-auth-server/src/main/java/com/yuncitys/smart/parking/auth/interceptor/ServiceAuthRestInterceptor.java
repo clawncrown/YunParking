@@ -1,6 +1,6 @@
 package com.yuncitys.smart.parking.auth.interceptor;
 
-import com.yuncitys.ag.core.util.jwt.IJWTInfo;
+import com.yuncitys.smart.parking.auth.common.util.jwt.IJWTInfo;
 import com.yuncitys.smart.parking.auth.configuration.ClientConfiguration;
 import com.yuncitys.smart.parking.auth.module.client.service.AuthClientService;
 import com.yuncitys.smart.parking.auth.jwt.client.ClientTokenUtil;

@@ -1,6 +1,6 @@
 package com.yuncitys.smart.parking.admin.rpc;
 
-import com.smart.cache.annotation.Cache;
+import com.yuncitys.smart.merge.annonation.Cache;
 import com.yuncitys.ag.core.context.BaseContextHandler;
 import com.yuncitys.smart.parking.admin.rpc.service.PermissionService;
 import com.yuncitys.smart.parking.api.vo.authority.PermissionInfo;

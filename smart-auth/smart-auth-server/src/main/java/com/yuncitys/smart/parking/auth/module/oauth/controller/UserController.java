@@ -3,7 +3,7 @@ package com.yuncitys.smart.parking.auth.module.oauth.controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.parking.Principal;
+import java.security.Principal;
 
 /**
  * @author smart

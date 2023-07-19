@@ -3,7 +3,7 @@ package com.smart.iot.pay.util;
 import org.apache.commons.codec.digest.DigestUtils;
 
 import java.io.UnsupportedEncodingException;
-import java.parking.SignatureException;
+import java.security.SignatureException;
 
 /**
 * 功能：MD5签名

@@ -1,7 +1,7 @@
 package com.yuncitys.smart.parking.auth.runner;
 
 import com.alibaba.fastjson.JSON;
-import com.yuncitys.ag.core.util.RsaKeyHelper;
+import com.yuncitys.smart.parking.auth.common.util.jwt.RsaKeyHelper;
 import com.yuncitys.smart.parking.auth.configuration.KeyConfiguration;
 import com.yuncitys.smart.parking.auth.jwt.AECUtil;
 import com.yuncitys.smart.parking.auth.module.client.biz.GatewayRouteBiz;

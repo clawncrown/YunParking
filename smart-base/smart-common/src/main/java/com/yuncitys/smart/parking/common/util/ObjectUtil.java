@@ -1,4 +1,6 @@
 package com.yuncitys.smart.parking.common.util;
+import com.yuncitys.ag.core.exception.BaseException;
+
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.HashMap;
@@ -41,7 +43,7 @@ public class ObjectUtil {
         Method method = null;
         try {
             method = ownerClass.getMethod("get" + methodName);
-        } catch (parkingException e) {
+        } catch (BaseException e) {
         } catch (NoSuchMethodException e) {
             return " can't find 'get" + methodName + "' method";
         }

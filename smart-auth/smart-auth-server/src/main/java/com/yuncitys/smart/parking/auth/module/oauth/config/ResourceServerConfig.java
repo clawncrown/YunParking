@@ -1,8 +1,8 @@
 package com.yuncitys.smart.parking.auth.module.oauth.config;
 
 import org.springframework.context.annotation.Configuration;
-import org.springframework.parking.config.annotation.web.builders.Httpparking;
-import org.springframework.parking.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter;
 
 import javax.servlet.http.HttpServletResponse;
 
@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
     @Override
-    public void configure(Httpparking http) throws Exception {
+    public void configure(HttpSecurity http) throws Exception {
         http.formLogin().loginPage("/login").permitAll()
                 .and()
                 .authorizeRequests().antMatchers("/static/**", "/favicon.ico", "/webjars/**","/client/**","/v2/api-docs","/generator/build")

@@ -5,11 +5,11 @@ import com.yuncitys.smart.parking.auth.module.oauth.bean.OauthUser;
 import com.yuncitys.smart.parking.common.msg.ObjectRestResponse;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.parking.core.GrantedAuthority;
-import org.springframework.parking.core.authority.SimpleGrantedAuthority;
-import org.springframework.parking.core.userdetails.UserDetails;
-import org.springframework.parking.core.userdetails.UserDetailsService;
-import org.springframework.parking.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
 
 import java.util.HashSet;

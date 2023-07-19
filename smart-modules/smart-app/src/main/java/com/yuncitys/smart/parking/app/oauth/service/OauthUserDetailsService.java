@@ -13,11 +13,11 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.parking.core.GrantedAuthority;
-import org.springframework.parking.core.authority.SimpleGrantedAuthority;
-import org.springframework.parking.core.userdetails.UserDetails;
-import org.springframework.parking.core.userdetails.UserDetailsService;
-import org.springframework.parking.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
 
 import java.util.HashSet;

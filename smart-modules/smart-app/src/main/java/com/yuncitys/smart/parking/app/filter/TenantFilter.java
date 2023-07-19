@@ -15,11 +15,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.netflix.zuul.filters.ZuulProperties;
 import org.springframework.core.annotation.Order;
 import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.parking.core.userdetails.UsernameNotFoundException;
-import org.springframework.parking.oauth2.common.exceptions.OAuth2Exception;
-import org.springframework.parking.web.util.matcher.AntPathRequestMatcher;
-import org.springframework.parking.web.util.matcher.OrRequestMatcher;
-import org.springframework.parking.web.util.matcher.RequestMatcher;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.oauth2.common.exceptions.OAuth2Exception;
+import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
+import org.springframework.security.web.util.matcher.OrRequestMatcher;
+import org.springframework.security.web.util.matcher.RequestMatcher;
 import org.springframework.stereotype.Component;
 import org.xnio.Result;
 

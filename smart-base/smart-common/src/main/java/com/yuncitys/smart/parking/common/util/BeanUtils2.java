@@ -4,6 +4,8 @@ package com.yuncitys.smart.parking.common.util;
  * Created by Administrator on 2018/8/9 0009.
  */
 
+import com.yuncitys.ag.core.exception.BaseException;
+
 import javax.persistence.Id;
 import java.beans.PropertyDescriptor;
 import java.lang.reflect.Field;
@@ -81,7 +83,7 @@ public class BeanUtils2<T> {
             throw new CommonException(e, "创建beanClass实例异常");
         } catch (IllegalAccessException e) {
             throw new CommonException(e, "创建beanClass实例异常");
-        } catch (parkingException e) {
+        } catch (BaseException e) {
             throw new CommonException(e, "获取[" + fieldname + "] getter setter 方法异常");
         } catch (NoSuchMethodException e) {
             throw new CommonException(e, "获取[" + fieldname + "] getter setter 方法异常");

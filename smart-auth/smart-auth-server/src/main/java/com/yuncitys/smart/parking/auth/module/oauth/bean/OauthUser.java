@@ -1,8 +1,8 @@
 package com.yuncitys.smart.parking.auth.module.oauth.bean;
 
-import org.springframework.parking.core.GrantedAuthority;
-import org.springframework.parking.core.userdetails.User;
-import org.springframework.parking.core.userdetails.UserDetails;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
 
